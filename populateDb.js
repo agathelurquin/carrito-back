@@ -1,4 +1,6 @@
 const fs = require("fs");
+const { faker } = require("@faker-js/faker");
+
 const accessoriesMen = require("./categories/accessoriesMen");
 const accessoriesWomen = require("./categories/accessoriesWomen");
 const coatsMen = require("./categories/coatsMen");
@@ -84,6 +86,7 @@ for (const collection in data) {
       // video: need to fix the links,
       gender: defineGender(collection),
       category: collection,
+      description: faker.commerce.productDescription(),
       sizes: ["S", "M", "L", "XL", "XXL"],
       stock: {
         S: Math.floor(Math.random() * 500),
