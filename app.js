@@ -3,7 +3,7 @@ const jsonServer = require("json-server");
 const morgan = require("morgan");
 
 const server = jsonServer.create();
-const router = jsonServer.router("data.json");
+const router = jsonServer.router("catalog.json");
 const middlewares = jsonServer.defaults();
 const PORT = process.env.PORT;
 
