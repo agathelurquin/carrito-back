@@ -80,7 +80,7 @@ for (const collection in data) {
       // previousPrice: hasPreviousPrice(),
       // onSale
       colour: product.colour, // create colour groups
-      brand: product.brand,
+      brand: product.brandName,
       image: `https://${product.imageUrl}`,
       secondImages: addProtocolToLinks(product.additionalImageUrls),
       // video: need to fix the links,
