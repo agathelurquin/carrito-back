@@ -73,13 +73,15 @@ for (const collection in data) {
     // define function hasPreviousPrice()
     // define function cleanProductName()
     // define function additionalImageInterpolation()
+
+    console.log(product.brandName);
     const newProduct = {
       id: product.id,
       name: product.name,
       currentPrice: product.price.current.value,
       // previousPrice: hasPreviousPrice(),
       // onSale
-      colour: product.colour, // create colour groups
+      colour: product.colour,
       brand: product.brandName,
       image: `https://${product.imageUrl}`,
       secondImages: addProtocolToLinks(product.additionalImageUrls),
