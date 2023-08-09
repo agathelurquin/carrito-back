@@ -75,6 +75,9 @@ for (const collection in data) {
     // define function additionalImageInterpolation()
 
     console.log(product.brandName);
+    if (finalCatalog.products.find((item) => item.id === product.id)) {
+      continue;
+    }
     const newProduct = {
       id: product.id,
       name: product.name,
